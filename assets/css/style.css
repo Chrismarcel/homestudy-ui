@@ -24,6 +24,9 @@ body {
   line-height: 1.7;
   color: #333; }
 
+.content {
+  text-align: justify; }
+
 .btn {
   padding: .7rem 2rem;
   border-radius: .3rem; }
@@ -32,7 +35,13 @@ body {
     color: #3260DA; }
   .btn--icon {
     display: inline-block;
-    margin-left: 5px; }
+    margin-left: .5rem; }
+
+.card {
+  box-shadow: 0px 0.2rem 1rem #af8f8f;
+  padding: 3rem;
+  border-radius: .5rem;
+  background: #FFF; }
 
 .header {
   position: fixed;
@@ -57,4 +66,26 @@ body {
     top: -1.8rem; }
   .header__btn {
     float: right;
+    margin-top: 1.5rem; }
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  background: url("../../assets/img/background.png");
+  background-size: cover;
+  height: 100vh;
+  padding: 12rem 20rem; }
+  .content__card:not(:last-child) {
+    margin-bottom: 3rem; }
+  .content__header {
+    display: inline-block;
+    margin-bottom: 10px;
+    position: relative; }
+  .content__header::before {
+    content: '';
+    width: 7rem;
+    position: absolute;
+    bottom: -.5rem;
+    border-bottom: 0.3rem solid #3260DA; }
+  .content__text {
     margin-top: 1.5rem; }
