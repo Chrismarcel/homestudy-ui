@@ -4,8 +4,9 @@
     background: url('../../assets/img/background.png');
     background-size: cover;
     height: 100vh;
-    padding: 12rem 20rem; 
+    padding: 11rem 20rem; 
     position: relative;
+    justify-content: flex-end;
 
     &__card:not(:last-child) {
         margin-bottom: 3rem;
@@ -23,6 +24,11 @@
         position: absolute;
         bottom: -.5rem;
         border-bottom: .3rem solid $color-primary;
+    }
+
+    &__footer {
+        font-size: 1.6rem;
+        font-weight: 600;
     }
 
     &__text {

@@ -26,8 +26,19 @@
         top: -1.8rem;
     }
 
-    &__btn {
+    &__menu-items {
         float: right;
-        margin-top: 1.5rem;
+        margin-top: 1.2rem;
+    }
+
+    &__profile {
+        display: none;
+        margin-right: 4rem;
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    &__btn {
+        display: inline-block;
     }
 }

@@ -22,10 +22,16 @@
                 DLC Developer Toolkit
             </span>
         </a>
-        <a href="#" class="btn btn--white header__btn">
-            Begin here
-            <i class="btn--icon fas fa-chevron-right"></i>
-        </a>
+        <div class="header__menu-items">
+            <a href="#" class="header__profile" id="profile-icon">
+                <i class="fas fa-user"></i>
+                <i class="fas fa-angle-down"></i>
+            </a>
+            <a href="#" class="btn btn--white header__btn">
+                Begin here
+                <i class="btn--icon fas fa-chevron-right"></i>
+            </a>
+        </div>
     </header>
     <!-- End Header -->
     <!-- Begin homepage main content -->
@@ -55,6 +61,9 @@
                 Corporis voluptas commodi accusantium aliquid libero!
             </p>
         </section>
+        <span class="content__footer">
+            <i class="fab fa-slack-hash"></i> OpenAndela Community
+        </span>
         <!-- Begin Modal -->
         <div class="card modal">
             <div class="modal__header">
@@ -70,7 +79,7 @@
                         <input type="text" class="form__elements" id="email">
                     </div>
                     <div class="form__elements form__horizontal">
-                        <button class="btn btn--primary" type="submit">Begin Learning Now</button>
+                        <button class="btn btn--primary" id="submit-email" type="submit">Begin Learning Now</button>
                     </div>
                 </form>
             </div>
@@ -78,8 +87,8 @@
         <!-- End Modal -->
     </main>
     <!-- End homepage main content -->
-    <footer>
-
+    <footer class="footer">
+        <!-- Footer content goes in here -->
     </footer>
 </body>
 <script src="./assets/js/main.js"></script>

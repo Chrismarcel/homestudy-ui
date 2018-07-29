@@ -77,7 +77,7 @@ input[type="text"] {
     outline-color: transparent; }
 
 .form__horizontal:first-child {
-  flex-grow: 5;
+  flex-grow: 20;
   margin-right: 1.5rem; }
 
 .form__horizontal:nth-child(2) {
@@ -137,9 +137,16 @@ input[type="text"] {
     position: relative;
     display: inline-block;
     top: -1.8rem; }
-  .header__btn {
+  .header__menu-items {
     float: right;
-    margin-top: 1.5rem; }
+    margin-top: 1.2rem; }
+  .header__profile {
+    display: none;
+    margin-right: 4rem;
+    color: #fff;
+    font-size: 2rem; }
+  .header__btn {
+    display: inline-block; }
 
 .content {
   display: flex;
@@ -147,8 +154,9 @@ input[type="text"] {
   background: url("../../assets/img/background.png");
   background-size: cover;
   height: 100vh;
-  padding: 12rem 20rem;
-  position: relative; }
+  padding: 11rem 20rem;
+  position: relative;
+  justify-content: flex-end; }
   .content__card:not(:last-child) {
     margin-bottom: 3rem; }
   .content__header {
@@ -161,6 +169,9 @@ input[type="text"] {
     position: absolute;
     bottom: -.5rem;
     border-bottom: 0.3rem solid #3260da; }
+  .content__footer {
+    font-size: 1.6rem;
+    font-weight: 600; }
   .content__text {
     margin-top: 1.5rem;
     font-size: 1.6rem; }

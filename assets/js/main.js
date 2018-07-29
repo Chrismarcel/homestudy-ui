@@ -14,6 +14,15 @@ document.querySelector('#overlay').addEventListener('click', function () {
     closeModal();
 });
 
+// Simulate user activation
+document.querySelector('#submit-email').addEventListener('click', function (event) {
+    event.preventDefault();
+    closeModal();
+    document.querySelector('.header__btn').childNodes[0].nodeValue = 'Classroom';
+    document.querySelectorAll('.content__header')[1].innerText = 'Why Use This Curriculum';
+    document.getElementById('profile-icon').style.display = 'inline-block';
+});
+
 const closeModal = () => {
     document.querySelector('.modal').classList.remove('modal--open');
     document.getElementById('overlay').style.display = 'none';
