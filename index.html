@@ -12,50 +12,76 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>DLC Developer Toolkit</title>
 </head>
-<header class="header">
-    <a href="#" class="header__logo">
-        <img src="./assets/img/andela-logo.png" alt="Andela Logo" class="header__img">
-        <span class="header__text">
-            DLC Developer Toolkit
-        </span>
-    </a>
-    <a href="#" class="btn btn--white header__btn">
-        Begin here
-        <i class="btn--icon fas fa-chevron-right"></i>
-    </a>
-</header>
-<main class="content">
-    <section class="card content__card">
-        <h2 class="content__header">Overview</h2>
-        <p class="content__text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate dignissimos
-            harum minus commodi adipisci necessitatibus debitis rerum nisi ea excepturi
-            delectus impedit labore eum officiis eveniet, placeat reprehenderit aperiam
-            pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-            cupiditate nulla architecto, temporibus non ab excepturi! Odit similique
-            voluptates nostrum architecto. Itaque tenetur quibusdam amet culpa quaerat
-            dicta ducimus ipsam!
-        </p>
-    </section>
-    <section class="card content__card">
-        <h2 class="content__header">Why Use This Toolkit</h2>
-        <p class="content__text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate dignissimos
-            harum minus commodi adipisci necessitatibus debitis rerum nisi ea excepturi
-            delectus impedit labore eum officiis eveniet, placeat reprehenderit aperiam
-            pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-            eaque, quisquam quod quasi, necessitatibus molestiae fugiat ipsam corporis
-            facilis accusamus doloribus. Facere, natus provident! Corporis voluptas
-            commodi accusantium aliquid libero!
-        </p>
-    </section>
-</main>
-<footer>
-
-</footer>
 
 <body>
+    <!-- Begin Header -->
+    <header class="header">
+        <a href="#" class="header__logo">
+            <img src="./assets/img/andela-logo.png" alt="Andela Logo" class="header__img">
+            <span class="header__text">
+                DLC Developer Toolkit
+            </span>
+        </a>
+        <a href="#" class="btn btn--white header__btn">
+            Begin here
+            <i class="btn--icon fas fa-chevron-right"></i>
+        </a>
+    </header>
+    <!-- End Header -->
+    <!-- Begin homepage main content -->
+    <main class="content">
+        <div class="content__overlay" id="overlay"></div>
+        <section class="card content__card">
+            <h2 class="content__header">Overview</h2>
+            <p class="content__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate dignissimos
+                harum minus commodi adipisci necessitatibus debitis rerum nisi ea
+                excepturi delectus impedit labore eum officiis eveniet, placeat reprehenderit
+                aperiam pariatur. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Ad cupiditate nulla architecto, temporibus non ab excepturi!
+                Odit similique voluptates nostrum architecto. Itaque tenetur quibusdam
+                amet culpa quaerat dicta ducimus ipsam!
+            </p>
+        </section>
+        <section class="card content__card">
+            <h2 class="content__header">Why Use This Toolkit</h2>
+            <p class="content__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate dignissimos
+                harum minus commodi adipisci necessitatibus debitis rerum nisi ea
+                excepturi delectus impedit labore eum officiis eveniet, placeat reprehenderit
+                aperiam pariatur. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Et eaque, quisquam quod quasi, necessitatibus molestiae fugiat
+                ipsam corporis facilis accusamus doloribus. Facere, natus provident!
+                Corporis voluptas commodi accusantium aliquid libero!
+            </p>
+        </section>
+        <!-- Begin Modal -->
+        <div class="card modal">
+            <div class="modal__header">
+                <h3 class="modal__title">Learner Activation</h3>
+                <a href="#" class="modal__icon modal__close">
+                    <i class="fas fa-times"></i>
+                </a>
+            </div>
+            <div class="modal__content">
+                <form class="form modal__form" action="">
+                    <div class="form__elements form__horizontal">
+                        <label for="email">Your Email</label>
+                        <input type="text" class="form__elements" id="email">
+                    </div>
+                    <div class="form__elements form__horizontal">
+                        <button class="btn btn--primary" type="submit">Begin Learning Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- End Modal -->
+    </main>
+    <!-- End homepage main content -->
+    <footer>
 
+    </footer>
 </body>
+<script src="./assets/js/main.js"></script>
 
 </html>

@@ -5,6 +5,7 @@
     background-size: cover;
     height: 100vh;
     padding: 12rem 20rem; 
+    position: relative;
 
     &__card:not(:last-child) {
         margin-bottom: 3rem;
@@ -26,5 +27,17 @@
 
     &__text {
         margin-top: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba($color-dark, .5);
+        z-index: 10;
+        display: none;
     }
 }

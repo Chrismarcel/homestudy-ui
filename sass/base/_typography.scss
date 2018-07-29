@@ -9,3 +9,20 @@ body {
 .content {
     text-align: justify;
 }
+
+.btn {
+    font-size: 1.6rem;
+    font-family: inherit;
+    line-height: 1.7;
+}
+
+label {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+input[type="text"] {
+   font-size: 1.6rem;
+   font-family: "Lato", sans-serif;
+   letter-spacing: .1rem;
+}
