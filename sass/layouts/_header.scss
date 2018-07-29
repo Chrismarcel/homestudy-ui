@@ -1,0 +1,33 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $color-primary;
+    max-width: 100%;
+    color: $color-white;
+    padding: 0 10rem;
+    z-index: 1000;
+
+    &__logo {
+        display: inline-block;
+        position: relative;
+    }
+
+    &__img {
+        margin-bottom: -5px;
+    }
+
+    &__text {
+        color: $color-white;
+        font-size: 1.8rem;
+        font-weight: 600;
+        position: relative;
+        display: inline-block;
+        top: -1.8rem;
+    }
+
+    &__btn {
+        float: right;
+        margin-top: 1.5rem;
+    }
+}

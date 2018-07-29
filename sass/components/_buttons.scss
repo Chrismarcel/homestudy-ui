@@ -1,0 +1,14 @@
+.btn {
+    padding: .7rem 2rem;
+    border-radius: .3rem;
+
+    &--white {
+        background: $color-white;
+        color: $color-primary;
+    }
+
+    &--icon {
+        display: inline-block;
+        margin-left: 5px;
+    }
+}

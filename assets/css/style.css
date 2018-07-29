@@ -16,3 +16,45 @@ a {
 
 li {
   list-style: none; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: #333; }
+
+.btn {
+  padding: .7rem 2rem;
+  border-radius: .3rem; }
+  .btn--white {
+    background: #FFF;
+    color: #3260DA; }
+  .btn--icon {
+    display: inline-block;
+    margin-left: 5px; }
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #3260DA;
+  max-width: 100%;
+  color: #FFF;
+  padding: 0 10rem;
+  z-index: 1000; }
+  .header__logo {
+    display: inline-block;
+    position: relative; }
+  .header__img {
+    margin-bottom: -5px; }
+  .header__text {
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    top: -1.8rem; }
+  .header__btn {
+    float: right;
+    margin-top: 1.5rem; }
