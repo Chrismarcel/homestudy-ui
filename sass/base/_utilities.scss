@@ -1,0 +1,57 @@
+.header-underline {
+    margin-bottom: 1.5rem;
+
+    &::before {
+        content: '';
+        width: 7rem;
+        position: absolute;
+        bottom: -.5rem;
+        border-bottom: .3rem solid $color-primary;
+    }
+}
+
+.text {
+
+    margin-top: 1.5rem;
+
+    &--bold {
+        font-weight: 600;
+    }
+
+    &--italic {
+        font-style: italic;
+    }
+
+    &--danger {
+        color: $color-danger;
+        font-weight: 600;
+    }
+
+    &--underline {
+        text-decoration: underline;
+    }
+
+    &--crossed {
+        text-decoration: line-through;
+    }
+}
+
+.header-lg {
+    font-size: 2.2rem;
+}
+
+.header-sm {
+    font-size: 1.8rem;
+}
+
+.link-hover {
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.sub-title {
+    display: block;
+}

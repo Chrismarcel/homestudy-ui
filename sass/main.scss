@@ -7,6 +7,7 @@
 @import 'base/animations';
 @import 'base/base';
 @import 'base/typography';
+@import 'base/utilities';
 
 // Import Component files
 @import 'components/buttons';
@@ -15,9 +16,10 @@
 @import 'components/modal';
 
 // Import Layout files
+@import 'layouts/grid';
 @import 'layouts/header';
 @import 'layouts/main';
 
 
 // Import Pages files
-
+@import 'pages/classroom';

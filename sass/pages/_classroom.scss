@@ -1,0 +1,17 @@
+.content {
+    &__current > .card, &__tracks > .card {
+        border-left: 1rem solid $color-primary;
+    }
+
+    &__current {
+        margin-bottom: 3rem;
+    }
+
+    &__tracks .col__item {
+        flex-basis: 49%;
+    }
+
+    &__card .current-course .col__item:first-child {
+        flex-basis: 70%;
+    }
+}

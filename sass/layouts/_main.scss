@@ -1,12 +1,15 @@
 .content {
     display: flex;
     flex-wrap: wrap;
-    background: url('../../assets/img/background.png');
-    background-size: cover;
     height: 100vh;
     padding: 11rem 20rem; 
     position: relative;
     justify-content: flex-end;
+
+    &__bg {
+        background: url('../../assets/img/background.png');
+        background-size: cover;
+    }
 
     &__card:not(:last-child) {
         margin-bottom: 3rem;
@@ -14,16 +17,7 @@
 
     &__header {
         display: inline-block;
-        margin-bottom: 10px;
         position: relative;
-    }
-
-    &__header::before {
-        content: '';
-        width: 7rem;
-        position: absolute;
-        bottom: -.5rem;
-        border-bottom: .3rem solid $color-primary;
     }
 
     &__footer {
@@ -32,8 +26,8 @@
     }
 
     &__text {
-        margin-top: 1.5rem;
         font-size: 1.6rem;
+        margin-top: 1rem;
     }
 
     &__overlay {
