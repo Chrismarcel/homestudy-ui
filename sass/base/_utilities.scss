@@ -1,18 +1,6 @@
-.header-underline {
-    margin-bottom: 1.5rem;
-
-    &::before {
-        content: '';
-        width: 7rem;
-        position: absolute;
-        bottom: -.5rem;
-        border-bottom: .3rem solid $color-primary;
-    }
-}
-
 .text {
-
-    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    margin-top: 1rem;
 
     &--bold {
         font-weight: 600;
@@ -20,6 +8,10 @@
 
     &--italic {
         font-style: italic;
+    }
+
+    &--primary {
+        color: $color-primary;
     }
 
     &--danger {
@@ -34,14 +26,39 @@
     &--crossed {
         text-decoration: line-through;
     }
-}
 
-.header-lg {
-    font-size: 2.2rem;
-}
+    &--credits {
+        display: block;
+        margin-bottom: 1rem;
+        color: $color-primary;
+    }
 
-.header-sm {
-    font-size: 1.8rem;
+    &--header {
+        display: inline-block;
+        position: relative;
+        flex-basis: 100%;
+
+        &--header-lg {
+            font-size: 2.2rem;
+        }
+
+        &--header-sm {
+            font-size: 1.8rem;
+        }
+
+        &-underline {
+            margin-bottom: 1.5rem;
+
+            &::before {
+                content: '';
+                width: 7rem;
+                position: absolute;
+                bottom: -.5rem;
+                border-bottom: .3rem solid $color-primary;
+            }
+        }
+
+    }
 }
 
 .link-hover {
@@ -52,6 +69,6 @@
     }
 }
 
-.sub-title {
-    display: block;
+.btn--row {
+    margin: 1.5rem 0;
 }

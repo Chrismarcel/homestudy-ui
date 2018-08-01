@@ -7,10 +7,12 @@
     color: $color-white;
     padding: 0 10rem;
     z-index: 5;
+    display: flex;
 
     &__logo {
         display: inline-block;
         position: relative;
+        flex-grow: 1;
     }
 
     &__img {
@@ -27,7 +29,6 @@
     }
 
     &__menu-items {
-        float: right;
         margin-top: 1.2rem;
     }
 

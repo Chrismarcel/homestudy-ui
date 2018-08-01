@@ -1,0 +1,9 @@
+.content {
+
+    &__bg {
+        background: url('../../assets/img/background.png');
+        background-size: cover;
+        justify-content: flex-end;
+        height: 100vh;
+    }
+}
