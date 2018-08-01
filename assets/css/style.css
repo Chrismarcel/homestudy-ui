@@ -45,21 +45,15 @@ input[type="text"] {
   font-family: "Lato", sans-serif;
   letter-spacing: .1rem; }
 
-.header-underline {
-  margin-bottom: 1.5rem; }
-  .header-underline::before {
-    content: '';
-    width: 7rem;
-    position: absolute;
-    bottom: -.5rem;
-    border-bottom: 0.3rem solid #3260da; }
-
 .text {
-  margin-top: 1.5rem; }
+  font-size: 1.6rem;
+  margin-top: 1rem; }
   .text--bold {
     font-weight: 600; }
   .text--italic {
     font-style: italic; }
+  .text--primary {
+    color: #3260da; }
   .text--danger {
     color: #ff5200;
     font-weight: 600; }
@@ -67,20 +61,34 @@ input[type="text"] {
     text-decoration: underline; }
   .text--crossed {
     text-decoration: line-through; }
-
-.header-lg {
-  font-size: 2.2rem; }
-
-.header-sm {
-  font-size: 1.8rem; }
+  .text--credits {
+    display: block;
+    margin-bottom: 1rem;
+    color: #3260da; }
+  .text--header {
+    display: inline-block;
+    position: relative;
+    flex-basis: 100%; }
+    .text--header--header-lg {
+      font-size: 2.2rem; }
+    .text--header--header-sm {
+      font-size: 1.8rem; }
+    .text--header-underline {
+      margin-bottom: 1.5rem; }
+      .text--header-underline::before {
+        content: '';
+        width: 7rem;
+        position: absolute;
+        bottom: -.5rem;
+        border-bottom: 0.3rem solid #3260da; }
 
 .link-hover {
   text-decoration: underline; }
   .link-hover:hover {
     text-decoration: underline; }
 
-.sub-title {
-  display: block; }
+.btn--row {
+  margin: 1.5rem 0; }
 
 .btn {
   padding: .7rem 2rem;
@@ -168,10 +176,12 @@ input[type="text"] {
   max-width: 100%;
   color: #fff;
   padding: 0 10rem;
-  z-index: 5; }
+  z-index: 5;
+  display: flex; }
   .header__logo {
     display: inline-block;
-    position: relative; }
+    position: relative;
+    flex-grow: 1; }
   .header__img {
     margin-bottom: -5px; }
   .header__text {
@@ -182,7 +192,6 @@ input[type="text"] {
     display: inline-block;
     top: -1.8rem; }
   .header__menu-items {
-    float: right;
     margin-top: 1.2rem; }
   .header__profile {
     margin-right: 4rem;
@@ -194,24 +203,14 @@ input[type="text"] {
 .content {
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
-  padding: 11rem 20rem;
+  padding: 11rem 20rem 5.5rem;
   position: relative;
-  justify-content: flex-end; }
-  .content__bg {
-    background: url("../../assets/img/background.png");
-    background-size: cover; }
+  background: #fafafa; }
   .content__card:not(:last-child) {
     margin-bottom: 3rem; }
-  .content__header {
-    display: inline-block;
-    position: relative; }
   .content__footer {
     font-size: 1.6rem;
     font-weight: 600; }
-  .content__text {
-    font-size: 1.6rem;
-    margin-top: 1rem; }
   .content__overlay {
     position: fixed;
     top: 0;
@@ -233,3 +232,9 @@ input[type="text"] {
 
 .content__card .current-course .col__item:first-child {
   flex-basis: 70%; }
+
+.content__bg {
+  background: url("../../assets/img/background.png");
+  background-size: cover;
+  justify-content: flex-end;
+  height: 100vh; }
