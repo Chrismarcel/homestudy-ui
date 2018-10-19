@@ -1,5 +1,5 @@
 // Begin handling modal toggle events
-console.log(location.pathname);
+
 if (location.pathname === "/") {
   document.querySelector("#begin").addEventListener("click", function(event) {
     if (event.target.id === "begin") {
